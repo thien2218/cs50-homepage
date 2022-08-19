@@ -5,7 +5,7 @@
    --clr-neutral: #fff;
 
    /* Typography */
-   --fw-semi-bold: 500;
+   --fw-semibold: 500;
    --fw-bold: 700;
 
    --fs-300: .9375rem;
@@ -132,9 +132,10 @@ hr {
 .bgr-accent { background-color: var(--clr-accent) }
 
 /* Typography */
-.fw-semi-bold { font-weight: var(--fw-semi-bold) }
+.fw-semibold { font-weight: var(--fw-semibold) }
 .fw-bold { font-weight: var(--fw-bold) }
 
+.fs-body { font-size: var(--fs-body) }
 .fs-heading { font-size: var(--fs-heading) }
 .fs-subheading { font-size: var(--fs-subheading) }
 
@@ -269,14 +270,10 @@ hr {
    background-color: var(--clr-primary);
 }
 
-.swiper-slide {
-   user-select: none;
-}
-
 /* Other */
 .flow > *:where(:not(:first-child)) { margin-top: var(--flow-space, 1rem) !important }
 .transition { transition: all .2s ease-out }
-.material-symbols-outlined { user-select: none }
+.material-symbols-outlined, .swiper-slide { user-select: none }
 .sr-only {
    position: absolute;
    width: 1px;
@@ -380,6 +377,62 @@ section em.line::before {
    outline: none;
 }
 
+/* Testimonials */
+.testimonials__main {
+   background-image: url(./images/about-us/testimonial-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.testimonials__main h2 { opacity: .7 }
+
+.testimonials__main .fa-quote-right {
+   font-size: 2.25rem;
+   position: absolute;
+   top: 30px;
+   right: 30px;
+}
+
+.testimonials__slide {
+   position: relative;
+   z-index: inherit;
+}
+.testimonials__slide::after {
+   content: '';
+   position: absolute;
+   background-color: #feb8b9;
+   top: 2.5%;
+   left: 2.5%;
+   height: 100%;
+   width: 100%;
+   border-radius: var(--radius);
+   z-index: -1;
+}
+
+/* Accordion */
+.accordion-item {
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.accordion-button:not(.collapsed) {
+   color: var(--clr-accent);
+   background-color: var(--clr-neutral);
+   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+   box-shadow: inset 0 -3px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button::after {
+   background-image: url(./images/about-us/arrow-down.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+   background-image: url(./images/about-us/arrow-up.svg);
+}
+
 /* Footer */
 footer {
    margin-top: 60px;
@@ -437,6 +490,10 @@ footer {
       width: 170px;
       left: calc(100% + 255px);
       background-image: url(./images/homepage/cat-nest3.jpg);
+   }
+
+   .testimonials__main {
+      background-position: center right;
    }
 
    footer{
