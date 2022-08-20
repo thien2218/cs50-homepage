@@ -229,18 +229,6 @@ hr {
 .py-600 { padding: var(--space-600) 0 }
 .py-800 { padding: var(--space-800) 0 }
 
-.space-right-m-300 { margin-top: var(--space-300); margin-left: 0; }
-.space-right-m-400 { margin-top: var(--space-400); margin-left: 0; }
-.space-right-m-500 { margin-top: var(--space-500); margin-left: 0; }
-.space-right-m-600 { margin-top: var(--space-600); margin-left: 0; }
-.space-right-m-800 { margin-top: var(--space-800); margin-left: 0; }
-
-.space-left-m-300 { margin-bottom: var(--space-300); margin-right: 0; }
-.space-left-m-400 { margin-bottom: var(--space-400); margin-right: 0; }
-.space-left-m-500 { margin-bottom: var(--space-500); margin-right: 0; }
-.space-left-m-600 { margin-bottom: var(--space-600); margin-right: 0; }
-.space-left-m-800 { margin-bottom: var(--space-800); margin-right: 0; }
-
 /* Radius */
 .brd-rounded { border-radius: var(--radius) }
 .brd-t-rounded { border-top-right-radius: var(--radius); border-top-left-radius: var(--radius) }
@@ -377,27 +365,27 @@ section em.line::before {
    outline: none;
 }
 
-/* Testimonials */
-.testimonials__main {
+/* About page - Testimonials */
+.about__testimonials {
    background-image: url(./images/about-us/testimonial-bg.jpg);
    background-repeat: no-repeat;
    background-position: center center;
 }
 
-.testimonials__main h2 { opacity: .7 }
+.about__testimonials h2 { opacity: .7 }
 
-.testimonials__main .fa-quote-right {
+.about__testimonials .fa-quote-right {
    font-size: 2.25rem;
    position: absolute;
    top: 30px;
    right: 30px;
 }
 
-.testimonials__slide {
+.about__testimonials-slide {
    position: relative;
    z-index: inherit;
 }
-.testimonials__slide::after {
+.about__testimonials-slide::after {
    content: '';
    position: absolute;
    background-color: #feb8b9;
@@ -409,7 +397,7 @@ section em.line::before {
    z-index: -1;
 }
 
-/* Accordion */
+/* About page - Accordion */
 .accordion-item {
    border: none;
    border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -431,6 +419,33 @@ section em.line::before {
 
 .accordion-button:not(.collapsed)::after {
    background-image: url(./images/about-us/arrow-up.svg);
+}
+
+/* Explore page */
+.explore__project-detail {
+   position: relative;
+   background-color: rgba(255, 255, 255, .9);
+   margin: var(--space-300) 0 var(--space-400) 0;
+   box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
+}
+
+.explore__pagination-img {
+   height: 60px;
+   width: 60px;
+}
+
+.explore__right-image,
+.explore__right-pagination {
+   margin-top: var(--space-300);
+}
+
+.explore__right-pagination {
+   padding-top: 30px;
+   border-top: 1px solid #eeeeee;
+}
+
+.explore__left-pagination {
+   margin-bottom: var(--space-300);
 }
 
 /* Footer */
@@ -492,8 +507,32 @@ footer {
       background-image: url(./images/homepage/cat-nest3.jpg);
    }
 
-   .testimonials__main {
+   .about__testimonials {
       background-position: center right;
+   }
+
+   .explore__project-detail {
+      margin: -150px var(--space-400) 80px var(--space-400);
+      box-shadow: none;
+   }
+
+   .explore__pagination-img {
+      height: 115px;
+      width: 115px;
+   }
+
+   .explore__right-image,
+   .explore__right-pagination {
+      margin-top: 0;
+   }
+
+   .explore__right-pagination {
+      padding-top: 0;
+      border-top: none;
+   }
+
+   .explore__left-pagination {
+      margin-bottom: 0;
    }
 
    footer{
