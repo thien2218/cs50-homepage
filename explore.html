@@ -18,24 +18,37 @@
 </head>
 
 <body>
-   <header>
-      <nav>
-         <div class="wrapper d-flex align-items-center justify-content-between">
-            <a href="#"><img src="./images/logo-nav.png" alt="Logo"></a>
-            <ul class="gap-3 d-flex mb-0">
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="about.html">About Us</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition active bgr-neutral" href="explore.html">Explore Work</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="trend.html">Trending</a>
-               </li>
-            </ul>
+   <div class="loader">
+      <div class="loader-img" style="height: 50px; width: 50px">
+         <img src="./images/load.svg" alt="Loader">
+      </div>
+   </div>
+
+   <header id="top">
+      <nav class="navbar navbar-expand-lg navbar-light transition">
+         <div class="container expanded">
+            <a href="index.html"><img src="./images/logo-nav.png" alt="Logo"></a>
+
+            <button class="navbar-toggler collapsed bgr-neutral txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa-solid fa-bars fs-650"></i>
+            </button>
+            
+            <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav gap-lg-3 d-flex mb-0">
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="about.html">About Us</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition active" href="explore.html">Explore Work</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="trend.html">Trending</a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </nav>
       
@@ -47,9 +60,9 @@
       </div>
    </header>
 
-   <main>
+   <main id="explore">
       <section class="mt-600 pt-600">
-         <div class="wrapper">
+         <div class="container expanded">
             <div class="row">
                <div class="col-lg-12">
                   <h2 class="fs-700 fw-bold txt-primary text-center lh-heading mb-400">CAT HOUSE ON A WALL</h2>
@@ -58,7 +71,7 @@
 
                   <div class="explore__project-detail brd-rounded p-400 row">
                      <div class="col-lg-2 col-md-4 align-self-center text-center my-lg-0 my-3">
-                        <h3 class="txt-primary fw-semibold fs-500">Architext:</h3>
+                        <h3 class="txt-primary fw-semibold fs-500">Architect:</h3>
                         <span class="m-0">Thien Huynh</span>
                      </div>
                      
@@ -73,7 +86,7 @@
                      </div>
                      
                      <div class="col-lg-2 col-md-4 align-self-center text-center my-lg-0 my-3">
-                        <h3 class="txt-primary fw-semibold fs-500">Project type:</h3>
+                        <h3 class="txt-primary fw-semibold fs-500">Project Type:</h3>
                         <span class="m-0">Static Web</span>
                      </div>
                      
@@ -111,33 +124,35 @@
                   </p>
                </div>
 
-               <div style="border-top: 1px solid #eeeeee" class="pt-600 row">
-                  <div class="col-lg-6">
-                     <div class="align-items-center d-flex explore__left-pagination">
-                        <div class="explore__pagination-img brd-rounded d-flex justify-content-center position-relative overflow-hidden">
-                           <img class="h-100 w-auto position-absolute" src="./images/trending/cat-bowl.jpg" alt="Cat bowl">
-                        </div>
-                        
-                        <div class="ml-400 text-start">
-                           <h3>
-                              <a class="txt-primary fw-bold fs-500 txt-link-hover transition" href="explore.html">Cat Bowl</a>
-                           </h3>
-                           <span class="fs-300">Cat Utility</span>
+               <div style="padding-inline: 2rem">
+                  <div style="border-top: 1px solid #eeeeee" class="row px-0 pt-600">
+                     <div class="col-lg-6 px-0">
+                        <div class="align-items-center d-flex explore__left-pagination">
+                           <div class="explore__pagination-img brd-rounded d-flex justify-content-center position-relative overflow-hidden">
+                              <img class="h-100 w-auto position-absolute" src="./images/trending/cat-bowl.jpg" alt="Cat bowl">
+                           </div>
+                           
+                           <div class="ml-400 text-start">
+                              <h3>
+                                 <a class="txt-primary fw-bold fs-500 txt-link-hover transition" href="explore.html">Cat Bowl</a>
+                              </h3>
+                              <span class="fs-300">Cat Utility</span>
+                           </div>
                         </div>
                      </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                     <div class="explore__right-pagination align-items-center d-flex justify-content-end">
-                        <div class="mr-400 text-end">
-                           <h3>
-                              <a class="txt-primary fw-bold fs-500 txt-link-hover transition" href="explore.html">Cat Bowl</a>
-                           </h3>
-                           <span class="fs-300">Cat Utility</span>
-                        </div>
-                        
-                        <div class="explore__pagination-img brd-rounded d-flex justify-content-center position-relative overflow-hidden">
-                           <img class="h-100 w-auto position-absolute" src="./images/trending/cat-bowl.jpg" alt="Cat bowl">
+                  
+                     <div class="col-lg-6 px-0">
+                        <div class="explore__right-pagination align-items-center d-flex justify-content-end">
+                           <div class="mr-400 text-end">
+                              <h3>
+                                 <a class="txt-primary fw-bold fs-500 txt-link-hover transition" href="explore.html">Cat Bowl</a>
+                              </h3>
+                              <span class="fs-300">Cat Utility</span>
+                           </div>
+                           
+                           <div class="explore__pagination-img brd-rounded d-flex justify-content-center position-relative overflow-hidden">
+                              <img class="h-100 w-auto position-absolute" src="./images/trending/cat-bowl.jpg" alt="Cat bowl">
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -242,5 +257,8 @@
          </div>
       </div>
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="script.js"></script>
 </body>
 </html>

@@ -20,24 +20,37 @@
 </head>
 
 <body>
-   <header>
-      <nav>
-         <div class="wrapper d-flex align-items-center justify-content-between">
-            <a href="#"><img src="./images/logo-nav.png" alt="Logo"></a>
-            <ul class="gap-3 d-flex mb-0">
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition active bgr-neutral" href="about.html">About Us</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="explore.html">Explore Work</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="trend.html">Trending</a>
-               </li>
-            </ul>
+   <div class="loader">
+      <div class="loader-img" style="height: 50px; width: 50px">
+         <img src="./images/load.svg" alt="Loader">
+      </div>
+   </div>
+
+   <header id="top">
+      <nav class="navbar navbar-expand-lg navbar-light transition">
+         <div class="container expanded">
+            <a href="index.html"><img src="./images/logo-nav.png" alt="Logo"></a>
+
+            <button class="navbar-toggler collapsed bgr-neutral txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa-solid fa-bars fs-650"></i>
+            </button>
+            
+            <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav gap-lg-3 d-flex mb-0">
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition active" href="about.html">About Us</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="explore.html">Explore Work</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="trend.html">Trending</a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </nav>
       
@@ -49,24 +62,24 @@
       </div>
    </header>
 
-   <main>
+   <main id="about">
       <section class="subsection">
          <div class="container">
             <div class="row">
                <div class="col-lg-4">
-                  <div class="subsection__content brd-rounded p-400 bgr-neutral text-center">
+                  <div class="subsection__content mb-300 brd-rounded p-400 bgr-neutral text-center">
                      <i style="font-size: 3.25rem" class="fa-solid fa-headset txt-accent"></i>
                      <div class="mt-300 fs-600 txt-primary fw-bold">Active Support 24/7</div>
                   </div>
                </div>
                <div class="col-lg-4">
-                  <div class="subsection__content brd-rounded p-400 bgr-neutral text-center">
+                  <div class="subsection__content mb-300 brd-rounded p-400 bgr-neutral text-center">
                      <i style="font-size: 3.25rem" class="fa-solid fa-face-smile txt-accent""></i>
                      <div class="mt-300 fs-600 txt-primary fw-bold">Customer Care</div>
                   </div>
                </div>
                <div class="col-lg-4">
-                  <div class="subsection__content brd-rounded p-400 bgr-neutral text-center">
+                  <div class="subsection__content mb-300 brd-rounded p-400 bgr-neutral text-center">
                      <i style="font-size: 3.25rem" class="fa-solid fa-palette txt-accent"></i>
                      <div class="mt-300 fs-600 txt-primary fw-bold">Easy to Customize</div>
                   </div>
@@ -76,7 +89,7 @@
       </section>
 
       <section>
-         <div class="wrapper">
+         <div class="container expanded">
             <div class="row">
                <div class="col-lg-6">
                   <div class="space-left-m-400">
@@ -154,7 +167,7 @@
       </section>
 
       <section class="mt-600 pt-600">
-         <div class="wrapper">
+         <div class="container expanded">
             <div class="about__testimonials brd-rounded">
                <div class="row">
                   <div class="col-lg-8">
@@ -327,6 +340,9 @@
          </div>
       </div>
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="script.js"></script>
 
    <script>
       const swiper = new Swiper(".mySwiper", {

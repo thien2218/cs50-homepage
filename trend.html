@@ -18,37 +18,248 @@
 </head>
 
 <body>
-   <header>
-      <nav>
-         <div class="wrapper d-flex align-items-center justify-content-between">
-            <a href="#"><img src="./images/logo-nav.png" alt="Logo"></a>
-            <ul class="gap-3 d-flex mb-0">
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="about.html">About Us</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition txt-link-hover" href="explore.html">Explore Work</a>
-               </li>
-               <li class="txt-neutral btn-anchor-wrapper">
-                  <a class="button brd-b-rounded transition active bgr-neutral" href="trend.html">Trending</a>
-               </li>
-            </ul>
+   <div class="loader">
+      <div class="loader-img" style="height: 50px; width: 50px">
+         <img src="./images/load.svg" alt="Loader">
+      </div>
+   </div>
+
+   <header id="top">
+      <nav class="navbar navbar-expand-lg navbar-light transition">
+         <div class="container expanded">
+            <a href="index.html"><img src="./images/logo-nav.png" alt="Logo"></a>
+
+            <button class="navbar-toggler collapsed bgr-neutral txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa-solid fa-bars fs-650"></i>
+            </button>
+            
+            <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav gap-lg-3 d-flex mb-0">
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="index.html">Homepage</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="about.html">About Us</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition txt-link-hover" href="explore.html">Explore Work</a>
+                  </li>
+                  <li class="txt-neutral btn-anchor-wrapper">
+                     <a class="button brd-b-rounded transition active" href="trend.html">Trending</a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </nav>
       
       <div class="banner flow">
          <h1 class="fs-heading fw-bold txt-neutral">
-            <em class="txt-accent">ABOUT</em> CATSERVE
+            <em class="txt-accent"> CHECK</em> TRENDING WORK
          </h1>
          <p style="max-width: 600px" class="txt-neutral mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
    </header>
 
-   <main>
-      
+   <main id="trend">
+      <section class="pt-600 mt-600">
+         <div class="container expanded">
+            <div class="grid">
+               <div class="grid-sizer"></div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height2 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Lounge</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-lounge.jpg" alt="Cat lounge">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Box</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-box.jpg" alt="Cat Box">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height2 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Scratcher</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-scratcher.jpg" alt="Cat scratcher">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Bowl</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-bowl.jpg" alt="Cat bowl">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Shelter</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-shelter.jpg" alt="Cat shelter">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Bed</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-bed.jpg" alt="Cat bed">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Bowl</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-bowl.jpg" alt="Cat bowl">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height2 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Lounge</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-lounge.jpg" alt="Cat lounge">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Box</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-box.jpg" alt="Cat Box">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height2 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Scratcher</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-scratcher.jpg" alt="Cat scratcher">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Bed</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-bed.jpg" alt="Cat bed">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="grid-item">
+                  <div class="mb-400 px-300">
+                     <div class="grid--height1 overflow-hidden brd-rounded">
+                        <div class="grid--height-sizer">
+                           <span class="inner-content--banner bgr-accent txt-neutral px-3 position-absolute brd-br-rounded">Cat Shelter</span>
+                           <div class="inner-content--link bgr-accent txt-neutral text-center fs-500 fw-bold position-absolute w-100">
+                              <a href="explore.html">
+                                 Cat Utility Design<i class="fa-solid fa-arrow-right fs-body ml-300"></i>
+                              </a>
+                           </div>
+                           <img src="../images/trending/cat-shelter.jpg" alt="Cat shelter">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
       <section class="newsletter mt-800 pt-500 pb-500 bgr-primary">
          <div class="container">
@@ -146,5 +357,22 @@
          </div>
       </div>
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+   <script src="script.js"></script>
+   <script>
+      const $grid = $('.grid').isotope({
+         itemSelector: '.grid-item',
+         masonry: {
+            columnWidth: '.grid-sizer'
+         }
+      });
+
+      $grid.imagesLoaded().progress( function() {
+         $grid.isotope('layout');
+      });
+   </script>
 </body>
 </html>
